@@ -49,7 +49,7 @@ namespace ScottPlot.Control.EventProcess.Events
                 if (Input.CtrlDown) yFrac = 1;
                 if (Input.ShiftDown) xFrac = 1;
 
-                Settings.AxesZoomTo(xFrac <= 0 ? 0.1 : xFrac, yFrac <= 0 ? 0.1 : yFrac, Settings.MouseDownX, Settings.MouseDownY);
+                Settings.AxesZoomTo(xFrac <= 0 ? 0.2 : xFrac, yFrac <= 0 ? 0.2 : yFrac, Settings.MouseDownX, Settings.MouseDownY);
             }
 
             if (Configuration.LockHorizontalAxis)
